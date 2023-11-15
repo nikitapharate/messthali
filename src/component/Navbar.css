@@ -1,0 +1,142 @@
+/* *{
+    border: 1px solid red;
+} */
+/* #navbar{
+    background: #414141;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center  ;
+}
+#nav-left , #nav-right{
+    height: fit-content;
+   
+}
+#nav-left a, #nav-right a{
+    color: #fff;
+    font-size: 1rem;
+    margin:0rem 1rem ;
+    padding: 0.5rem;
+}
+#nav-right button{
+   padding: 0.5rem;
+   margin: 0rem 0.5rem;
+   border: 0.1rem solid black;
+   border-radius: 0.5rem;
+   background: rgb(255, 15, 150);
+}
+#nav-left a:hover, #nav-right a:hover{
+color:rgb(255, 15, 150);
+border-bottom: 0.2rem solid #afafab;
+}
+
+#nav-right button:hover{
+    scale: 1.1;
+    transition: all .3s ease-in-out;
+    background:rgb(255, 15, 150);
+}
+
+#logo h1{
+    color: rgb(255, 15, 150);
+}
+
+ */
+
+ #navbar {
+    background: #414141;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#nav-left, #nav-right {
+    height: fit-content;
+    display: flex; /* Ensure child items are treated as flex items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+}
+
+#nav-left a, #nav-right a {
+    color: #fff;
+    font-size: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+#nav-right button {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+    background: rgb(255, 15, 150);
+}
+
+#nav-left a:hover,
+#nav-right a:hover {
+    color: rgb(255, 15, 150);
+    border-bottom: 0.2rem solid #afafab;
+}
+
+#nav-right button:hover {
+    scale: 1.1;
+    transition: all 0.3s ease-in-out;
+    background: rgb(255, 15, 150);
+}
+
+#logo h1 {
+    color: rgb(255, 15, 150);
+    margin: 0; /* Remove margin to keep the logo horizontally aligned with buttons on larger screens */
+}
+
+/* Use a media query to apply specific styles for screens with a max-width of 768px (adjust as needed) */
+@media only screen and (max-width: 768px) {
+    #navbar {
+        height: 9rem;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    #nav-left,  #nav-right {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    #nav-left a, #nav-right a, #nav-right button {
+        margin: 0.5rem;
+    }
+
+    #logo h1 {
+        margin-top: 1rem; 
+    }
+}
+
+@media only screen and (max-width: 390px){
+    #navbar {
+        height: 9rem;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    #nav-left, #nav-right {
+        width: 100%;
+        text-align: center;
+        font-size: 0.6rem;
+
+    }
+
+    #nav-left a, #nav-right a, #nav-right button {
+        margin: 0.5rem;
+    }
+
+    #logo h1 {
+        margin-top: 1rem; 
+    }
+
+}

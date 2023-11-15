@@ -1,0 +1,12 @@
+#review{
+width: 90%;
+height: fit-content;
+display: flex;
+margin: auto;
+}
+#remove-item{
+    margin: 1rem;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}

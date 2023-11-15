@@ -1,0 +1,34 @@
+#home{
+    
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://images.pexels.com/photos/301692/pexels-photo-301692.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat;
+  
+}
+.heading{
+    font-size:2.5rem;
+    text-align: center;
+    color: rgb(250, 180, 150);
+    margin-bottom: 3rem;
+}
+.btn{
+    padding: .8rem 1.7rem;
+}
+
+.btn{
+    padding:1rem 1.5rem;
+    border: 1px solid #414141;
+    border-radius: 0.2rem;
+    margin-top: 2.5rem;
+    font-size: x-large;
+    font-weight: 700;
+    color: aliceblue;
+    background: rgb(255, 15, 150);
+}
